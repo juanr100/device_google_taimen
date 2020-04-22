@@ -40,3 +40,5 @@ PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_MODEL := Pixel 2 XL
+
+$(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
