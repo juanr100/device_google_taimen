@@ -141,6 +141,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.traced.enable=1
 
+# For bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bootanimation-dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+
+# For bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    
 # Early phase offset for SurfaceFlinger (b/75985430)
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000
