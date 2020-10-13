@@ -127,6 +127,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.radio.log_prefix="modem_log_"
 endif
 
+# For bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    
 #IMU calibration
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
